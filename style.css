@@ -16,6 +16,15 @@ body {
 }
 
 /* NAV */
+header { 
+  background: #ffffff; 
+  border-bottom: 1px solid #f1d6db; 
+  padding: 18px 0; 
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+}
+
 .nav-bar {
   display: flex;
   align-items: center;

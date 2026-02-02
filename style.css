@@ -5,22 +5,23 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #fff7f9;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff7f9;
   color: #444;
   line-height: 1.6;
 }
 
+/* NAVIGATION */
 header {
   background: #ffffff;
-  padding: 20px;
   border-bottom: 1px solid #f1d6db;
+  padding: 18px 0;
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 28px;
 }
 
 nav a {
@@ -33,15 +34,16 @@ nav a:hover {
   color: #8c2f3f;
 }
 
+/* HERO */
 .hero {
-  padding: 80px 20px;
+  padding: 90px 20px;
   text-align: center;
-  background: linear-gradient(#fdecef, #fff);
+  background: linear-gradient(#fdecef, #ffffff);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 2.6rem;
+  margin-bottom: 12px;
 }
 
 .hero p {
@@ -49,65 +51,74 @@ nav a:hover {
   margin-bottom: 25px;
 }
 
+/* BUTTONS */
 .btn {
   display: inline-block;
-  padding: 12px 26px;
   background: #c94a5a;
-  color: white;
-  border-radius: 25px;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
   text-decoration: none;
-  margin: 5px;
+  margin: 6px;
 }
 
 .btn.secondary {
   background: #f2a3b3;
 }
 
+/* SECTIONS */
 .section {
-  padding: 60px 40px;
+  padding: 70px 50px;
   text-align: center;
 }
 
 .section h2 {
-  margin-bottom: 30px;
   color: #b33a50;
+  margin-bottom: 40px;
 }
 
+/* GRID / CARDS */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  gap: 30px;
 }
 
 .card {
   background: #ffffff;
-  border-radius: 15px;
+  border-radius: 18px;
   padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
 }
 
 .card img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
 .card h3 {
-  margin: 15px 0 10px;
+  margin: 14px 0 8px;
 }
 
-footer {
-  background: #fce4e8;
-  padding: 20px;
-  text-align: center;
+.card p {
   font-size: 0.9rem;
 }
 
-/* Valentine's theme */
+/* VALENTINE THEME */
 .valentine {
-  background: #fde6ec;
+  background-color: #fde6ec;
 }
 
 .valentine h1,
 .valentine h2 {
   color: #a11f3c;
 }
+
+/* FOOTER */
+footer {
+  background: #fce4e8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+

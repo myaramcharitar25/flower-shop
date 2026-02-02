@@ -6,39 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- NAVIGATION -->
   <header class="header">
     <nav class="nav">
-      <ul class="nav-left">
+      <ul class="nav-menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Company</a></li>
-        <li><a href="#">Same Day Delivery</a></li>
-      </ul>
-
-      <div class="logo">
-        <img src="images/logo-flower.png" alt="Flower Shop Logo">
-      </div>
-
-      <ul class="nav-right">
         <li><a href="#">Shop</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Shipping</a></li>
+
+        <li class="nav-logo">
+          <img src="images/logo.png" alt="Flower Logo">
+        </li>
+
+        <li><a href="#">Valentine’s Collection</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <div class="hero-overlay"></div>
-
     <div class="hero-content">
       <h1>Fresh Flowers</h1>
       <p>for Every Love Story</p>
@@ -50,37 +42,36 @@
     </div>
   </section>
 
-  <!-- Featured -->
+  <!-- FEATURED BOUQUETS -->
   <section class="featured">
-    <h2>❥ Featured Bouquets ❥</h2>
+    <div class="featured-header">
+      <span class="line"></span>
+      <h2>Featured Bouquets</h2>
+      <span class="line"></span>
+    </div>
 
     <div class="bouquet-grid">
-      <div class="bouquet-card">
+      <div class="bouquet">
         <img src="images/rose-bouquet.jpg" alt="Rose Bouquet">
         <p>Rose Bouquet</p>
       </div>
 
-      <div class="bouquet-card">
+      <div class="bouquet">
         <img src="images/mixed-flowers.jpg" alt="Mixed Flowers">
         <p>Mixed Flowers</p>
       </div>
 
-      <div class="bouquet-card">
+      <div class="bouquet">
         <img src="images/elegant-flowers.jpg" alt="Elegant Flowers">
         <p>Elegant Flower</p>
       </div>
 
-      <div class="bouquet-card">
+      <div class="bouquet">
         <img src="images/single-rose.jpg" alt="Single Rose">
         <p>Single Rose</p>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2026 Fresh Flowers Boutique. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>

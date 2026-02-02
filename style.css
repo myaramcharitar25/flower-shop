@@ -1,166 +1,158 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* COLOR PALETTE MATCHING IMAGE */
-:root {
-  --rose-dark: #d86a6a;
-  --rose-light: #f6d4d4;
-  --text-dark: #444;
-  --text-muted: #777;
-  --divider: #e6bcbc;
-}
-
+/* GLOBAL STYLES */
 body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: var(--text-dark);
-  background: #fff;
+  background: #fff0f5; /* soft pink */
+  color: #4b0029;
 }
 
 /* NAVIGATION */
-.header {
-  border-bottom: 1px solid #eee;
-}
-
 .nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff4d6d; /* vibrant pink-red */
+  padding: 15px 0;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 42px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-menu a {
+.nav-menu li a {
   text-decoration: none;
-  font-size: 13px;
-  color: var(--text-muted);
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #ffd6e0;
 }
 
 .nav-logo img {
-  width: 46px;
+  width: 50px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-  height: 480px;
-  background: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80")
-              right center / cover no-repeat;
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.hero-content {
-  margin-left: 120px;
-  max-width: 420px;
+  text-align: center;
+  height: 70vh;
+  background: linear-gradient(135deg, #ffccd5, #ff4d6d);
+  color: white;
+  position: relative;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 46px;
+  font-size: 3rem;
   font-weight: 600;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px #b3003b;
 }
 
 .hero p {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 22px;
-  margin: 10px 0 28px;
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 14px;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 11px 26px;
-  font-size: 13px;
-  border-radius: 3px;
+.hero-buttons .btn {
   text-decoration: none;
+  padding: 12px 30px;
+  margin: 5px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: transform 0.2s;
 }
 
-.primary {
-  background: var(--rose-dark);
-  color: #fff;
+.btn.primary {
+  background: #ff1a4d;
+  color: white;
 }
 
-.secondary {
-  background: var(--rose-light);
-  color: var(--rose-dark);
+.btn.primary:hover {
+  background: #ff4d6d;
+  transform: scale(1.05);
 }
 
-/* FEATURED SECTION */
+.btn.secondary {
+  background: #ffd6e0;
+  color: #4b0029;
+}
+
+.btn.secondary:hover {
+  background: #ffb3c6;
+  transform: scale(1.05);
+}
+
+/* FEATURED BOUQUETS */
 .featured {
-  padding: 65px 20px;
+  padding: 60px 20px;
   text-align: center;
+  background: #ffe6f0;
 }
 
 .featured-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 15px;
   margin-bottom: 40px;
+}
+
+.featured-header .line {
+  width: 50px;
+  height: 2px;
+  background: #ff4d6d;
 }
 
 .featured-header h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  color: var(--rose-dark);
+  font-size: 2rem;
+  color: #b3003b;
 }
 
-.line {
-  width: 50px;
-  height: 1px;
-  background: var(--divider);
-}
-
-/* BOUQUET GRID */
 .bouquet-grid {
-  max-width: 1200px;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .bouquet img {
   width: 100%;
-  height: 270px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.bouquet img:hover {
+  transform: scale(1.05);
 }
 
 .bouquet p {
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #4b0029;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero-content {
-    margin-left: 40px;
-  }
-
-  .bouquet-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .bouquet-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    height: 420px;
-  }
+/* FOOTER */
+.footer {
+  background: #ff4d6d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
 }

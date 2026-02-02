@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff7f9;
+  color: #444;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #f1d6db;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #b35463;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #8c2f3f;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(#fdecef, #fff);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #c94a5a;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn.secondary {
+  background: #f2a3b3;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  color: #b33a50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+footer {
+  background: #fce4e8;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Valentine's theme */
+.valentine {
+  background: #fde6ec;
+}
+
+.valentine h1,
+.valentine h2 {
+  color: #a11f3c;
+}

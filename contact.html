@@ -1,36 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact & Orders — Bloom & Co.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo"><span class="logo-script">Bloom</span><span class="logo-dot">&nbsp;&amp;&nbsp;</span><span class="logo-co">Co.</span></a>
+      </div>
 
-<header>
-  <nav>
-    <div class="logo">Bloom & Bliss</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="valentines.html">Valentine’s</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="valentines.html">Valentine's Specials</a></li>
+          <li><a href="contact.html" class="active">Contact & Orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="section contact">
-  <h2>Place Your Order 🌸</h2>
-  <p>To order, reach out to us via social media:</p>
+  <main class="container contact-page">
+    <h1>Contact & Orders</h1>
+    <p class="lead">To place an order, please message us on social media. We respond quickly and will confirm availability, delivery and payment details.</p>
 
-  <div class="socials">
-    <a href="#">Instagram</a>
-    <a href="#">WhatsApp</a>
-    <a href="#">Facebook</a>
-  </div>
-</section>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h2>Instagram</h2>
+        <p class="big"><a href="https://instagram.com/" target="_blank" rel="noopener">[@yourshop]</a></p>
+        <p>DM us with bouquet name, delivery date, and delivery address.</p>
+      </div>
 
-<footer>We can’t wait to create something beautiful for you 💖</footer>
+      <div class="contact-card">
+        <h2>Facebook</h2>
+        <p class="big"><a href="https://facebook.com/" target="_blank" rel="noopener">/yourshop</a></p>
+        <p>Send a message to place your order.</p>
+      </div>
 
+      <div class="contact-card">
+        <h2>Phone</h2>
+        <p class="big">+1 (555) 123-4567</p>
+        <p>Call or text for quick enquiries (business hours: 9am–6pm).</p>
+      </div>
+
+      <div class="contact-card">
+        <h2>Email</h2>
+        <p class="big"><a href="mailto:hello@bloomco.example">hello@bloomco.example</a></p>
+        <p>Email enquiries typically take 24–48 hours for a reply. For fast ordering use Instagram.</p>
+      </div>
+    </div>
+
+    <section class="how-to-order">
+      <h2>Ordering Tips</h2>
+      <ul>
+        <li>Include bouquet name (e.g., "Blushing Peonies")</li>
+        <li>Delivery date and recipient address</li>
+        <li>Any message you want on the card</li>
+        <li>Preferred delivery window (morning/afternoon)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; <span id="year4"></span> Bloom & Co.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

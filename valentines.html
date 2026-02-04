@@ -1,34 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Valentine’s Specials</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Valentine's Specials — Bloom & Co.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="valentine-theme">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo"><span class="logo-script">Bloom</span><span class="logo-dot">&nbsp;&amp;&nbsp;</span><span class="logo-co">Co.</span></a>
+      </div>
 
-<header>
-  <nav>
-    <div class="logo">Bloom & Bliss</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="valentines.html">Valentine’s</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="valentines.html" class="active">Valentine's Specials</a></li>
+          <li><a href="contact.html">Contact & Orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="section">
-  <h2>Valentine’s Specials 💕</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7"><div class="card-content"><h3>Love in Red</h3><div class="price">$180</div></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1496062031456-07b8f162a322"><div class="card-content"><h3>Heart Bouquet</h3><div class="price">$200</div></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f"><div class="card-content"><h3>Sweet Romance</h3><div class="price">$170</div></div></div>
-  </div>
-</section>
+  <main class="container">
+    <section class="val-top">
+      <h1>Valentine's Day Specials</h1>
+      <p class="lead">Celebrate love with our limited-time Valentine's bouquets. Message us on social to order — limited availability.</p>
+    </section>
 
-<footer>Order via Contact Page 💌</footer>
+    <div class="hearts-bg" aria-hidden="true">
+      <span class="heart h1"></span>
+      <span class="heart h2"></span>
+      <span class="heart h3"></span>
+    </div>
 
+    <section class="grid gallery-grid">
+      <article class="card val-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1555952517-6053d1e4b2d8?auto=format&fit=crop&w=800&q=80" alt="Red roses bouquet">
+        </div>
+        <div class="card-info">
+          <h3>Forever Red</h3>
+          <p class="price">$70</p>
+        </div>
+      </article>
+
+      <article class="card val-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=800&q=80" alt="Romantic mixed bouquet">
+        </div>
+        <div class="card-info">
+          <h3>Romance Mix</h3>
+          <p class="price">$60</p>
+        </div>
+      </article>
+
+      <article class="card val-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517202383675-eb0a6e27775f?auto=format&fit=crop&w=800&q=80" alt="Pink roses">
+        </div>
+        <div class="card-info">
+          <h3>Pretty in Pink</h3>
+          <p class="price">$58</p>
+        </div>
+      </article>
+
+      <article class="card val-card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Bouquet with heart accent">
+        </div>
+        <div class="card-info">
+          <h3>Heartfelt Bouquet</h3>
+          <p class="price">$75</p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="val-notes container">
+      <h2>How to Order</h2>
+      <ol>
+        <li>Go to <a href="contact.html">Contact & Orders</a>.</li>
+        <li>Message us on Instagram or Facebook with the bouquet name and preferred delivery date.</li>
+        <li>We’ll confirm availability, total, and delivery details in a DM.</li>
+      </ol>
+      <p class="muted">Note: Valentine's delivery slots fill quickly. Reserve early!</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; <span id="year3"></span> Bloom & Co. — Valentine's specials</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

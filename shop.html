@@ -1,35 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shop | Bloom & Bliss</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Bloom & Co.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo"><span class="logo-script">Bloom</span><span class="logo-dot">&nbsp;&amp;&nbsp;</span><span class="logo-co">Co.</span></a>
+      </div>
 
-<header>
-  <nav>
-    <div class="logo">Bloom & Bliss</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html">Shop</a></li>
-      <li><a href="valentines.html">Valentine’s</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="valentines.html">Valentine's Specials</a></li>
+          <li><a href="contact.html">Contact & Orders</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="section">
-  <h2>Our Collection</h2>
-  <div class="grid">
-    <div class="card"><img src="https://images.unsplash.com/photo-1469259943454-aa100abba749"><div class="card-content"><h3>Sunflower Bliss</h3><div class="price">$110</div></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde"><div class="card-content"><h3>Pink Dreams</h3><div class="price">$140</div></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"><div class="card-content"><h3>Classic Red Roses</h3><div class="price">$160</div></div></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba"><div class="card-content"><h3>Soft Pastels</h3><div class="price">$130</div></div></div>
-  </div>
-</section>
+  <main class="container">
+    <section class="shop-top">
+      <h1>All Bouquets</h1>
+      <p class="lead">Browse our selection. Click Contact & Orders to place an order via social media.</p>
+    </section>
 
-<footer>© 2026 Bloom & Bliss</footer>
+    <section class="grid gallery-grid">
+      <!-- Repeat card items; all images are same style and aspect ratio via CSS -->
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Peony bouquet">
+        </div>
+        <div class="card-info">
+          <h3>Blushing Peonies</h3>
+          <p class="desc">A soft bouquet of seasonal peonies and greenery.</p>
+          <p class="price">$48</p>
+        </div>
+      </article>
 
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Roses bouquet">
+        </div>
+        <div class="card-info">
+          <h3>Classic Roses</h3>
+          <p class="desc">A dozen premium roses in a classic wrap.</p>
+          <p class="price">$55</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=800&q=80" alt="Tulips">
+        </div>
+        <div class="card-info">
+          <h3>Spring Tulips</h3>
+          <p class="desc">Vibrant tulips in mixed colors.</p>
+          <p class="price">$35</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517701604593-b1f4a0b25c2c?auto=format&fit=crop&w=800&q=80" alt="Wildflower mix">
+        </div>
+        <div class="card-info">
+          <h3>Wild Meadow Mix</h3>
+          <p class="desc">A loose, seasonal wildflower arrangement.</p>
+          <p class="price">$40</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" alt="Sunflowers">
+        </div>
+        <div class="card-info">
+          <h3>Sunny Sunflowers</h3>
+          <p class="desc">Bright sunflowers bound with burlap.</p>
+          <p class="price">$30</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070ee5?auto=format&fit=crop&w=800&q=80" alt="Mixed roses">
+        </div>
+        <div class="card-info">
+          <h3>Pastel Romance</h3>
+          <p class="desc">A romantic pastel rose mix.</p>
+          <p class="price">$52</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=800&q=80" alt="Orchid">
+        </div>
+        <div class="card-info">
+          <h3>Elegant Orchids</h3>
+          <p class="desc">Long-lasting potted orchids for special occasions.</p>
+          <p class="price">$65</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1470167324475-16270f1f2d51?auto=format&fit=crop&w=800&q=80" alt="Garden arrangement">
+        </div>
+        <div class="card-info">
+          <h3>Garden Arrangement</h3>
+          <p class="desc">Seasonal stems arranged in rustic style.</p>
+          <p class="price">$45</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p>&copy; <span id="year2"></span> Bloom & Co.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
